@@ -8,4 +8,5 @@ It can translate that hexidecimal into words when you want to see what you have 
 Secure Note is written with Python.
 
 *NOTE* THIS PROJECT IS NOT CURRENTLY FINISHED
+
 *NOTE* USING THIS APP ONLY PROTECTS YOU FROM PEOPLE LOOKING AT YOUR SCREEN
