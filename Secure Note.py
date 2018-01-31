@@ -13,7 +13,7 @@ woof = [ ]
 
 #menubar functions
 def File_New():
-    print("Not made yet")
+    easygui.textbox()
     #New file code here
     
 def File_Open():
@@ -56,7 +56,11 @@ def search(retrieve):
     choice = easygui.choicebox(msg, title, choices)
     
     #prints values of variables to console for debugging
-    print(choice, choices, msg, title, retrieve, rescue)
+    #print(choice, choices, msg, title, retrieve, rescue)
+    print("current directory: " + str(os.getcwd()))
+    print("choices are " + str(choices))
+    print("chosen document: " + str(choice))
+    
     
     #opens chosen file
     fow = open(choice, 'r')
