@@ -13,7 +13,12 @@ woof = [ ]
 
 #menubar functions
 def File_New():
-    easygui.textbox()
+    msg = "Create a new file?"
+    title = "New File"
+    if easygui.ccbox(msg, title):
+        easygui.textbox()
+    else:
+        return
     #New file code here
     
 def File_Open():
@@ -65,8 +70,10 @@ def search(retrieve):
     #opens chosen file
     fow = open(choice, 'r')
     thing = fow.read()
-    easygui.textbox(text = thing)
-
+    try:
+        easygui.textbox(text = thing)
+    except:
+        exceptionbox()
     
     
     
@@ -77,6 +84,8 @@ guizero.MenuBar(app,
                      options=[
                          [ ["New File", File_New], ["Open File", File_Open], ["Save File", File_Save] ]
                          ])
+
+
 
 
 app.display()
