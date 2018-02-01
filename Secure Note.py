@@ -2,6 +2,7 @@ import guizero
 import easygui
 import os
 import sys
+import convert_hex as txhx
 
 from guizero import App, Box, TextBox, MenuBar
 from easygui import msgbox, textbox
