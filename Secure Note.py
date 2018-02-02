@@ -11,6 +11,7 @@ from os import system
 #Global variables
 thing = [ ]
 woof = [ ]
+showtime = ()
 
 #menubar functions
 def File_New():
