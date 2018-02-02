@@ -21,53 +21,53 @@ def File_New():
     else:
         return
     #New file code here
-    
+
 def File_Open():
     woof = easygui.diropenbox(msg = None, title = None, default = None)
-    
+
     print(woof)
     #prints var to console for debug
-    
+
     search(woof)
     #executes search function?
-    
+
     fow = open(choice, 'r')
     thing = fow.read()
     progress = thing
     main()
-    
+
 def File_Save():
     print("not made yet")
     #Save code here
-    
+
 def Edit_Function():
     functionE1 = easygui.msgbox("This part has not been made yet.", title = "Alert", ok_button = "Fine")
 #end of menubar functions
-    
+
 #Open file functions
 def search(retrieve):
     #prints for confirmation on startup of function
     print("retrieval signalled")
-    
+
     os.chdir(retrieve)
     rescue = os.listdir(os.getcwd())
     print(rescue) #for debug
-    
+
     #found = []
-    
+
     currently = os.getcwd()
     msg = ("Chose a file from " + currently)
     title = "Open File"
     choices = rescue                                     #'\n'.join()
     choice = easygui.choicebox(msg, title, choices)
-    
+
     #prints values of variables to console for debugging
     #print(choice, choices, msg, title, retrieve, rescue)
     print("current directory: " + str(os.getcwd()))
     print("choices are " + str(choices))
     print("chosen document: " + str(choice))
-    
-    
+
+
     #opens chosen file
     fow = open(choice, 'r')
     thing = fow.read()
@@ -75,9 +75,9 @@ def search(retrieve):
         easygui.textbox(text = thing)
     except:
         exceptionbox()
-    
-    
-    
+
+
+
 
 app = App()
 guizero.MenuBar(app,
@@ -92,5 +92,3 @@ guizero.MenuBar(app,
 app.display()
 
 app.on_close(sys.exit([])) #closes app
-
-
