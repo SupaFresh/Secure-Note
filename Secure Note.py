@@ -79,7 +79,7 @@ def search(retrieve):
 
 
 
-
+#menubar for start window
 app = App()
 guizero.MenuBar(app,
                      toplevel=["File"],

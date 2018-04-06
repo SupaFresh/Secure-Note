@@ -3,86 +3,81 @@ typed into hexidecimal"""
 
 import sys
 
-v = sys.python_version
-
-if "2.7" in v:
-    from Tkinter import *
-elif "3.3" in v or "3.4" in v:
-    from tkinter import *
+import tkinter as tk
     
     
 
 def keypress(event):
     kyp = event.char
     if kyp == "a":
-        print "a"
+        print (a)
         
     if kyp == "b":
-        print "b"
+        print (b)
         
     if kyp == "c":
-        print "c"
+        print (c)
         
     if kyp == "d":
-        print "d"
+        print (d)
         
     if kyp == "e":
-        print "e"
+        print (e)
         
     if kyp == "f":
-        print "f"
+        print (f)
         
     if kyp == "g":
-        print "g"
+        print (g)
         
     if kyp == "h":
-        print "h"
+        print (h)
         
     if kyp == "i":
-        print "i"
+        print (i)
         
     if kyp == "j":
-        print "j"
+        print (j)
         
     if kyp == "k":
-        print "k"
+        print (k)
         
     if kyp == "l":
-        print "l"
+        print (l)
         
     if kyp == "m":
-        print "m"
+        print (m)
         
     if kyp == "n":
-        print "n"
+        print (n)
         
     if kyp == "o":
-        print "o"
+        print (o)
         
     if kyp == "p":
-        print "p"
+        print (p)
         
     if kyp == "q":
-        print "q"
+        print (q)
         
     if kyp == "r":
-        print "r"
+        print (r)
         
     if kyp == "s":
-        print "s"
+        print (s)
         
     if kyp == "t":
-        print "t"
+        print (t)
         
     if kyp == "w":
-        print "w"
+        print (w)
         
     if kyp == "x":
-        print "x"
+        print (x)
         
     if kyp == "y":
-        print "y"
+        print (y)
         
     if kyp == "z":
-        print "z"
+        print (z)
     
