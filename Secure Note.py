@@ -18,7 +18,7 @@ def File_New():
     msg = "Create a new file?"
     title = "New File"
     if easygui.ccbox(msg, title):
-        easygui.textbox()
+        easygui.textbox(text=txhx.key)
     else:
         return
     #New file code here
