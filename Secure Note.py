@@ -12,26 +12,23 @@ from os import system
 thing = [ ]
 woof = [ ]
 showtime = ()
+wow = [ ]
 
-#menubar functions
 def File_New():
     msg = "Create a new file?"
     title = "New File"
     if easygui.ccbox(msg, title):
-        easygui.textbox(text=txhx.key)
+        input_box = guizero.TextBox(app, width = app.width, height = app.height, multiline = True, scrollbar = True)
+        TextBox.update_command(txhx.hideit)
     else:
-        return
-    #New file code here
+        exceptionbox()
 
 def File_Open():
     woof = easygui.diropenbox(msg = None, title = None, default = None)
-
     print(woof)
     #prints var to console for debug
-
     search(woof)
     #executes search function?
-
     fow = open(choice, 'r')
     thing = fow.read()
     progress = thing
@@ -49,11 +46,9 @@ def Edit_Function():
 def search(retrieve):
     #prints for confirmation on startup of function
     print("retrieval signalled")
-
     os.chdir(retrieve)
     rescue = os.listdir(os.getcwd())
     print(rescue) #for debug
-
     #found = []
 
     currently = os.getcwd()
@@ -67,7 +62,6 @@ def search(retrieve):
     print("current directory: " + str(os.getcwd()))
     print("choices are " + str(choices))
     print("chosen document: " + str(choice))
-
 
     #opens chosen file
     fow = open(choice, 'r')

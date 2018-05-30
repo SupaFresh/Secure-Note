@@ -3,87 +3,92 @@ typed into hexidecimal"""
 
 import sys
 import tkinter as tk
-    
-    
+import Secure Note as secnote
 
-def key(event):
-    print( 'pressed' , repr(event.char))
+def hideit()
+    for letter in TextBox.value:
+        txhx.translate(letter)
+
+def translate(cool):
     
-    if kyp == "a":
-        print (1,)
+    if cool == "a":
+        wow.append("1,")
         
-    if kyp == "b":
-        print (2,)
+    if cool == "b":
+        wow.append("2,")
         
-    if kyp == "c":
-        print (3,)
+    if cool == "c":
+        wow.append("3,")
         
-    if kyp == "d":
-        print (4,)
+    if cool == "d":
+        wow.append("4,")
         
-    if kyp == "e":
-        print (5,)
+    if cool == "e":
+        wow.append("5,")
         
-    if kyp == "f":
-        print (6,)
+    if cool == "f":
+        wow.append("6,")
         
-    if kyp == "g":
-        print (7,)
+    if cool == "g":
+        wow.append("7,")
         
-    if kyp == "h":
-        print (8,)
+    if cool == "h":
+        wow.append("8,")
         
-    if kyp == "i":
-        print (9,)
+    if cool == "i":
+        wow.append("9,")
         
-    if kyp == "j":
-        print (10,)
+    if cool == "j":
+        wow.append("10,")
         
-    if kyp == "k":
-        print (11,)
+    if cool == "k":
+        wow.append("11,")
         
-    if kyp == "l":
-        print (12,)
+    if cool == "l":
+        wow.append("12,")
         
-    if kyp == "m":
-        print (13,)
+    if cool == "m":
+        wow.append("13,")
         
-    if kyp == "n":
-        print (14,)
+    if cool == "n":
+        wow.append("14,")
         
-    if kyp == "o":
-        print (15,)
+    if cool == "o":
+        wow.append("15,")
         
-    if kyp == "p":
-        print (16,)
+    if cool == "p":
+        wow.append("16,")
         
-    if kyp == "q":
-        print (17,)
+    if cool == "q":
+        wow.append("17,")
         
-    if kyp == "r":
-        print (18,)
+    if cool == "r":
+        wow.append("18,")
         
-    if kyp == "s":
-        print (19,)
+    if cool == "s":
+        wow.append("19,")
         
-    if kyp == "t":
-        print (20,)
+    if cool == "t":
+        wow.append("20,")
         
-    if kyp == "u":
-        print (21,)
+    if cool == "u":
+        wow.append("21,")
         
-    if kyp == "v":
-        print (22,)
+    if cool == "v":
+        wow.append("22,")
         
-    if kyp == "w":
-        print (23,)
+    if cool == "w":
+        wow.append("23,")
         
-    if kyp == "x":
-        print (24,)
+    if cool == "x":
+        wow.append("24,")
         
-    if kyp == "y":
-        print (25,)
+    if cool == "y":
+        wow.append("25,")
         
-    if kyp == "z":
-        print (26,)
+    if cool == "z":
+        wow.append("26,")
+        
+    if cool == " ":
+        wow.append("\n")
     
