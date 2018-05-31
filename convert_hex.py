@@ -3,9 +3,9 @@ typed into hexidecimal"""
 
 import sys
 import tkinter as tk
-import Secure Note as secnote
+import secure_note as secnote
 
-def hideit()
+def hideit():
     for letter in TextBox.value:
         txhx.translate(letter)
 

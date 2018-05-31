@@ -67,7 +67,7 @@ def search(retrieve):
     fow = open(choice, 'r')
     thing = fow.read()
     try:
-        easygui.textbox(text = thing)
+        input_box = guizero.TextBox(app, width = app.width, height = app.height, multiline = True, scrollbar = True, text = thing)
     except:
         exceptionbox()
 
