@@ -82,7 +82,7 @@ guizero.MenuBar(app,
                          ])
 
 
-
+       TextBox.update_command(txhx.hideit)
 
 app.display()
 
